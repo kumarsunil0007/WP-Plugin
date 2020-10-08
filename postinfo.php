@@ -31,8 +31,6 @@ if ( !function_exists( 'add_action' ) ) {
 	exit;
 }
 
-
-
 /**
  *initialize class
  */
@@ -46,7 +44,6 @@ class PostInfoPlugin
 		// flush rewrite rules
 		flush_rewrite_rules();
 	}
-
 	/**
 	 *	this function in use for deactivate plugin
 	 * @return 
@@ -55,7 +52,6 @@ class PostInfoPlugin
 		// flush rewrite rules
 		flush_rewrite_rules();
 	}
-
 	/**
 	 * this function is use for get recent post and include script
 	 * @return get recent post , console browser hello world when load this script.
@@ -69,7 +65,6 @@ class PostInfoPlugin
 			wp_enqueue_script( 'mypluginscript', plugins_url( '/assets/js/myscript.js', __FILE__ ) );
 	 	}
 	}
-
 	/**
 	 * this function call customScript
 	 * @return false if not expose any info if called directly
@@ -79,7 +74,6 @@ class PostInfoPlugin
 	}
 	
 }
-
 /**
  * if this class exists the execute this object
  */
