@@ -63,6 +63,7 @@ class PostInfoPlugin
 	function customScript() {
 		$recent_posts = wp_get_recent_posts();
 		$post_id = $recent_posts[0]['ID'];
+			// Run code only for Single post page
 		 	if ( is_single( $post_id )) {
 	 		// enqueue all our scripts
 			wp_enqueue_script( 'mypluginscript', plugins_url( '/assets/js/myscript.js', __FILE__ ) );
